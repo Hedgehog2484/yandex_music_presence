@@ -19,7 +19,9 @@ pip install yandex-music
 ```
 
 And you need to put your discord client id and yandex music api key to the config.json
+
 Y_Music token from here: https://yandex-music.readthedocs.io/en/latest/token.html
+
 Discord client id from here: https://discord.com/developers/docs/getting-started
 
 Run ```__main__.py``` and start to listen some track.
