@@ -1,4 +1,4 @@
-#YANDEX MUSIC PRESENCE
+# YANDEX MUSIC PRESENCE
 A small script, which will display the current playing track in yandex music in your discord status.
 
 ## Installation
