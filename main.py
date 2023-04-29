@@ -29,13 +29,12 @@ def main():
                 started = time.time()
                 artists = ', '.join(last_track.artists_name())
                 title = last_track.title
-                img_uri = last_track.cover_uri
+                img_uri = f"https://{last_track.cover_uri[:-2]}400x400"
 
             RPC.update(
                 state=f"{artists} - {title}",
                 large_image=img_uri,
-                start=int(started),
-                small_image="logo"
+                start=int(started)
             )
             time.sleep(1)
         except:
