@@ -17,6 +17,7 @@ def main():
     artists = "None"
     title = "None"
     img_uri = "https://yastatic.net/s3/doc-binary/freeze/r-kLVqy2op9wYtE_g9RaJ8lzNtY.png"
+    buttons = None
 
     while True:
         try:
@@ -30,11 +31,13 @@ def main():
                 artists = ', '.join(last_track.artists_name())
                 title = last_track.title
                 img_uri = f"https://{last_track.cover_uri[:-2]}400x400"
+                buttons = [{"label": "Слушать", "url": f"https://music.yandex.ru/track/{last_track.id}"}]
 
             RPC.update(
                 state=f"{artists} - {title}",
                 large_image=img_uri,
-                start=int(started)
+                start=int(started),
+                buttons=buttons
             )
             time.sleep(1)
         except:
