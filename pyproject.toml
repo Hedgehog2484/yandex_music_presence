@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "yandex-music-presence"
+version = "0.1.0"
+description = ""
+authors = ["Svyatoslav <hedgehogdevelop@gmail.com>"]
+readme = "README.md"
+packages = [{include = "yandex_music_presence"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pypresence = "^4.2.1"
+yandex-music = "^2.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
